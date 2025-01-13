@@ -28,7 +28,7 @@ public class AuthenticationSuccessHandler extends SimpleUrlAuthenticationSuccess
 	@Override
 	public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
 
-		String defaultUrl = "/TB02010S";
+		String defaultUrl = "/TP10001S";
 
 		//에러세션 지우기
 		HttpSession session = request.getSession(false);

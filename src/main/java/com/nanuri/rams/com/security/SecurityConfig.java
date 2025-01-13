@@ -69,7 +69,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     			.and()
     		.formLogin()
     			.loginPage("/login")
-    			.defaultSuccessUrl("/TB02010S", true)
+    			.defaultSuccessUrl("/TP10001S", true)
     			.usernameParameter("eno").passwordParameter("pwd")
     			.successHandler(customSuccessHandler)
     			.failureHandler(customFailureHandler)

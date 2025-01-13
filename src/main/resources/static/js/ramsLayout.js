@@ -135,7 +135,7 @@ function chkPrevPage() {
     let result_id = url_ref.split("/");
 
     if (chk_menu === undefined) {
-        window.location.href = "/TB02010S"
+        //window.location.href = "/TB02010S"
     } else if (
         chk_menu != undefined 
         && (url_ref.indexOf("/TB") != -1 || url_ref.indexOf("/GD") != -1)
@@ -410,7 +410,7 @@ function removeTab(menuId) {
     }
 
     if ($("#myTab li").length === 1) {
-        location.href = "/TB02010S"
+        //location.href = "/TB02010S"
     }
 
     // 이용 다했어요

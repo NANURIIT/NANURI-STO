@@ -9,6 +9,16 @@
             "projectName": "NANURI-STO",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-RamsApplication<rams-NANURI-STO>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.nanuri.rams.RamsApplication",
+            "projectName": "rams-NANURI-STO",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
