@@ -464,7 +464,7 @@
            AND T2.DEL_YN = 'N'
            AND T2.MENU_LVL IS NOT NULL
          ORDER
-            BY T2.MENU_LVL, T2.SORT_NO, CASE WHEN T2.MENU_ID LIKE 'TB%' THEN 0 ELSE 1 END, T2.MENU_ID
+            BY T2.MENU_LVL, T2.SORT_NO, CASE WHEN T2.MENU_ID LIKE 'TP%' THEN 0 ELSE 1 END, T2.MENU_ID
     </select>
 
     <select id="devsList" resultType="com.nanuri.rams.business.common.dto.IBIMS005BDTO">
