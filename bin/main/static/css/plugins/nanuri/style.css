@@ -1001,7 +1001,7 @@ select:disabled, select[readonly]{cursor: text;}
   font-size: 12px;
 }
 .nav-header {
-  padding: 37px 25px;
+  padding: 31px 25px;
   background-color: #2F4050;
   /* background-image: url("patterns/header-profile.png"); */
 }
