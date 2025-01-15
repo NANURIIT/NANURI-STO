@@ -4805,7 +4805,7 @@ body.body-small .footer.fixed {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #e7e7e7;
+  border: 1px solid #d9d8d8;
 }
 .table > thead > tr > th {
   border-bottom: 1px solid #DDDDDD;
