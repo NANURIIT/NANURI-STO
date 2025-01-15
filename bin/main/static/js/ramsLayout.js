@@ -129,7 +129,7 @@ function createNav(empNo) {
 function chkPrevPage() {
 
     const url = window.location.pathname;
-    const chk_menu = $(`div[data-menuid="/TB02010S"`).attr('data-menuid')
+    const chk_menu = $(`div[data-menuid="/TP02010S"`).attr('data-menuid')
     
     let url_ref = document.referrer
     let result_id = url_ref.split("/");
@@ -139,8 +139,8 @@ function chkPrevPage() {
     } else if (
         chk_menu != undefined 
         && (url_ref.indexOf("/TP") != -1 || url_ref.indexOf("/TT") != -1)
-        && url_ref.indexOf("TB02010S") === -1 
-        && url === "/TB02010S"
+        && url_ref.indexOf("TP02010S") === -1 
+        && url === "/TP02010S"
     ) {
         const titleNm = $(`li[data-sidetabid="${result_id[result_id.length - 1]}"] a`).html();
         callPage(result_id[result_id.length - 1], titleNm);
