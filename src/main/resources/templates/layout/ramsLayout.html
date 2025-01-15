@@ -35,7 +35,7 @@
 			<!-- 상단 타이틀 -->
 			<div class="row wrapper white-bg page-heading" id="title-top">
 				<div class="col-lg-10" th:data-titleId="${#httpServletRequest.requestURI}">
-					<h2 class="" th:text="|[${title.urlVrbCntn}] ${title.title}|"></h2>
+					<h2 class="" th:text="|${title.title}|"></h2>
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item">
 							<span th:text="${title.hgTitle}"></span>
