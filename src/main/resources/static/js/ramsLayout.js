@@ -138,9 +138,9 @@ function chkPrevPage() {
         //window.location.href = "/TB02010S"
     } else if (
         chk_menu != undefined 
-        && (url_ref.indexOf("/TB") != -1 || url_ref.indexOf("/GD") != -1)
-        && url_ref.indexOf("TB02010S") === -1 
-        && url === "/TB02010S"
+        && (url_ref.indexOf("/TP") != -1 || url_ref.indexOf("/TT") != -1)
+        && url_ref.indexOf("TP02010S") === -1 
+        && url === "/TP02010S"
     ) {
         const titleNm = $(`li[data-sidetabid="${result_id[result_id.length - 1]}"] a`).html();
         callPage(result_id[result_id.length - 1], titleNm);
@@ -217,9 +217,9 @@ async function callPage(menuId, pageName) {
             let $title = $(response).find(`div[data-titleId="/${menuId}"]`)
 
             // 타이틀 숨기기
-            $('#title-top div[data-titleId*="TB"], #title-top div[data-titleId*="GD"]').hide()
+            $('#title-top div[data-titleId*="TP"], #title-top div[data-titleId*="TT"]').hide()
             // 컨텐츠 숨기기
-            $('#page-wrapper div[data-menuId*="TB"], #page-wrapper div[data-menuId*="GD"]').hide()
+            $('#page-wrapper div[data-menuId*="TP"], #page-wrapper div[data-menuId*="TT"]').hide()
 
             // 새로운 타이틀 생성
             $(`#title-top`).append($title);
@@ -238,7 +238,7 @@ async function callPage(menuId, pageName) {
                 `);
 
             // 새로운 컨텐츠 div 생성
-            $(`div[data-menuId*="/TB"], div[data-menuId*="/GD"]`).last().after(`<div data-menuId="/${menuId}"></div>`);
+            $(`div[data-menuId*="/TP"], div[data-menuId*="/TT"]`).last().after(`<div data-menuId="/${menuId}"></div>`);
 
             // 컨텐츠 내용 생성
             $(`div[data-menuId="/${menuId}"]`).html(customContent);
@@ -365,11 +365,11 @@ function moveTab(menuId) {
     $(`#myTab li[data-tabid="/${menuId}"]`).addClass('active');
 
     // 상단 타이틀요소 이동
-    $(`div[data-titleId*="TB"], div[data-titleId*="GD"]`).hide()
+    $(`div[data-titleId*="TP"], div[data-titleId*="TT"]`).hide()
     $(`div[data-titleId="/${menuId}"]`).show()
 
     // 메인Content요소 이동
-    $(`div[data-menuId*="TB"], div[data-menuId*="GD"]`).hide()
+    $(`div[data-menuId*="TP"], div[data-menuId*="TT"]`).hide()
     $(`div[data-menuId="/${menuId}"]`).show()
 
     needRunFn(menuId);
