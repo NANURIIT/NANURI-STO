@@ -16,7 +16,7 @@
 						<div class="form-group form-inline row">
 							<!-- 1 -->
 							<div class="form-group col-sm-12 mb-1">
-								<label class="col-sm-1 col-form-label text-right">제휴사 ID</label>
+								<label class="col-sm-1 col-form-label text-right">상품코드</label>
 								<div class="col-sm-3 input-group">
 									<input type="text" class="form-control" style="width: 5x;" id="">
 									<span class="input-group-append">
@@ -24,44 +24,22 @@
 									</span>
 									<input type="text" class="form-control" style="width: 95px;" id="" readonly>
 								</div>
-								<label class="col-sm-1 col-form-label text-right">제휴발행부서</label>
+								<label class="col-sm-1 col-form-label text-right">상태구분</label>
 								<div class="col-sm-3 input-group">
 									<select class="form-control" name="account" id="">
 										<option value="">선택</option>
 									</select>
 								</div>
 								
-								<div class="col-sm-1 input-group"></div>
-							</div>
-							<!-- row2 -->
-							<div class="form-group col-sm-12">
-								<label class="col-sm-1 col-form-label text-right">기초자산ID</label>
-								<div class="col-sm-3 input-group">
-									<input type="text" class="form-control" style="width: 5x;" id="">
-									<span class="input-group-append">
-										<button type="button" class="btn btn-default" onclick=""><i class="fa fa-search"></i></button>
-									</span>
-									<input type="text" class="form-control" id="" style="width: 95px;" readonly>
-								</div>
-								
-								<label class="col-sm-1 control-label">등록일자</label>
-								<div class="col-sm-3 input-group date">
-									<div class="col-sm-5 input-group date px-0">
-										<input type="text" class="form-control" id="" name="FromDate" value="" placeholder="yyyy-mm-dd" oninput="this.value = this.value.replace(/[^0-9-]/g, '')">
-										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-									</div>
-									<span class="input-group-addon border-none"> ~ </span>
-									<div class="col-sm-5 input-group date px-0">
-										<input type="text" class="form-control" id="" name="ToDate" value="" placeholder="yyyy-mm-dd" oninput="this.value = this.value.replace(/[^0-9-]/g, '')">
-										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-									</div>
-								</div>
-
 								<!-- 버튼영역 -->
 								<div class="col-sm-4 text-right">
 									<button class="btn btn-primary" onclick=""><i class="fa fa-search"></i>&nbsp;조회</button>
 									<button class="btn btn-default" onclick="" style="margin-right: 32px;"><i class="fa fa-undo"></i>&nbsp;초기화</button>
 								</div>
+							</div>
+							<!-- row2 -->
+							<div class="form-group col-sm-12">
+								
 							</div>
 							
 						</div>
