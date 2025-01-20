@@ -23,18 +23,6 @@
 										<option value="">하나증권</option>
 									</select>
 								</div>
-								<label class="col-sm-1 col-form-label text-right">주문 일자</label>
-								<div class="col-sm-3 input-group">
-									<input type="text" class="form-control" style="width: 5x;" id="">
-									<span class="input-group-append">
-										<button type="button" class="btn btn-default" onclick=""><i class="fa fa-search"></i></button>
-									</span>
-									<input type="text" class="form-control" style="width: 95px;" id="" readonly="">
-								</div>
-							</div>
-							
-							<!-- row -->
-							<div class="form-group col-sm-12">
 								<label class="col-sm-1 col-form-label text-right">계좌번호 조회</label>
 								<div class="col-sm-3 input-group date">
 									<div class="col-sm-5 input-group date px-0">
@@ -46,6 +34,19 @@
 										<input type="text" class="form-control" id="TB04060S_rgstEndDt" name="ToDate" value="" placeholder="yyyy-mm-dd" oninput="this.value = this.value.replace(/[^0-9-]/g, '')">
 										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
 									</div>
+								</div>
+								
+							</div>
+							
+							<!-- row -->
+							<div class="form-group col-sm-12">
+								<label class="col-sm-1 col-form-label text-right">주문 일자</label>
+								<div class="col-sm-3 input-group">
+									<input type="text" class="form-control" style="width: 5x;" id="">
+									<span class="input-group-append">
+										<button type="button" class="btn btn-default" onclick=""><i class="fa fa-search"></i></button>
+									</span>
+									<input type="text" class="form-control" style="width: 95px;" id="" readonly="">
 								</div>
 								<!-- 버튼영역 -->
 								<div class="col-sm-8 text-right">
