@@ -15,332 +15,172 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="ibox-content mb-1">
-				<!-- tab -->
-					<div class="tabs-container mb-2">
-						<ul class="nav nav-tabs" role="tablist" id="ramsTab">
-							<li><a class="nav-link" data-toggle="tab" href="#tab-2-1">종목 정보</a></li>
-							<li><a class="nav-link" data-toggle="tab" href="#tab-2-2">지갑</a></li>
-						</ul>
-						<div class="tab-content">
-							<!-- 기본 -->
-							<div role="tabpanel" class="tab-pane active" id="tab-2-1" >
-								<div class="panel-body"  style="min-height: 500px;">
-									<div class="row">
-										<div class="col-lg-12">
-											<div class="ibox">
-												<div class="ibox-title">
-													<h5>▶&nbsp;종목 기본 정보</h5>
-												</div>
-												<div class="ibox-content">
-													<!-- row1 -->
-													<div class="row form-group form-inline text-right mb-1">
-														<div class="col-sm-12 form-group">
-															<label class="col-sm-1 col-form-label text-right">상품코드</label>
-															<div class="col-sm-2 input-group">
-																<input type="text" class="form-control" readonly> 
-																<span class="input-group-append">
-																	<button type="button" class="btn btn-default" onclick=""><i class="fa fa-search"></i></button>
-																</span>
-															</div>
-															<label class="col-sm-1 col-form-label text-right">상품명</label>
-															<div class="col-sm-2 input-group">
-																<input type="text" class="form-control" id="" readonly> 
-															</div>
-															<label class="col-sm-1 col-form-label text-right">기초자산ID</label>
-															<div class="col-sm-2 input-group ">
-																<input type="text" class="form-control" id="" readonly> 
-															</div>
-															<label class="col-sm-1 col-form-label text-right">기초자산명</label>
-															<div class="col-sm-2 input-group ">
-																<input type="text" class="form-control" id="" value="" readonly> 
-															</div>
-														</div>
-													</div>
-													<!-- row2 -->
-													<div class="row form-group form-inline text-right mb-1">
-														<div class="col-sm-12 form-group">
-															<label class="col-sm-1 col-form-label text-right">제휴회사 ID</label>
-															<div class="col-sm-2 input-group ">
-																<input type="text" class="form-control" id="" readonly> 
-															</div>
-															<label class="col-sm-1 col-form-label text-right">제휴회사명</label>
-															<div class="col-sm-2 input-group">
-																<input type="text" class="form-control" id="" readonly> 
-															</div>
-															<label class="col-sm-1 col-form-label text-right">발행인명</label>
-															<div class="col-sm-2 input-group">
-																<input type="text" class="form-control" id="" readonly> 
-															</div>
-															<label class="col-sm-1 col-form-label text-right">수익구조</label>
-															<div class="col-sm-2 input-group">
-																<input type="text" class="form-control" id="" > 
-															</div>
-														</div>
-													</div>
-													<!-- row3 -->
-													<div class="row form-group form-inline text-right mb-1">
-														<div class="col-sm-12 form-group">
-															<label class="col-sm-1 col-form-label text-right">한글명</label>
-															<div class="col-sm-2 input-group">
-																<input type="text" class="form-control" id="" > 
-															</div>
-															<label class="col-sm-1 col-form-label text-right">토큰상태 구분</label>
-															<div class="col-sm-2 input-group">
-																<select class="form-control" id="">
-																	<option value="">선택</option>
-																</select>
-															</div>
-															<label class="col-sm-1 col-form-label text-right">상태 변경 사유</label>
-															<div class="col-sm-5 input-group">
-																<input type="text" class="form-control" id="" > 
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
 
-										<div class="col-lg-12">
-											<div class="ibox">
-												<div class="ibox-title">
-													<h5>▶&nbsp;상품 분류</h5>
-												</div>
-												<div class="ibox-content">
-													<!-- row1 -->
-													<div class="row form-group form-inline text-right mb-1">
-														<div class="col-sm-12 form-group">
-															<label class="col-sm-1 col-form-label text-right">상품 대분류</label>
-															<div class="col-sm-2 input-group">
-																<input type="text" class="form-control" readonly> 
-																<span class="input-group-append">
-																	<button type="button" class="btn btn-default" onclick=""><i class="fa fa-search"></i></button>
-																</span>
-															</div>
-															<label class="col-sm-1 col-form-label text-right">모집유형구분</label>
-															<div class="col-sm-2 input-group">
-																<input type="text" class="form-control" id="" readonly> 
-															</div>
-														</div>
-													</div>
-													<!-- row2 -->
-													<div class="row form-group form-inline text-right mb-1">
-														<div class="col-sm-12 form-group">
-															<label class="col-sm-1 col-form-label text-right">액면가</label>
-															<div class="col-sm-2 input-group text-right">
-																<input type="number" class="form-control" id="" > 
-															</div>
-															<label class="col-sm-1 col-form-label text-right">발행가격</label>
-															<div class="col-sm-2 input-group" style="text-align: right;">
-																<input type="number" class="form-control" id="" > 
-															</div>
-															<label class="col-sm-1 col-form-label text-right">총발행수량</label>
-															<div class="col-sm-2 input-group" style="text-align: right;">
-																<input type="number" class="form-control" id="" > 
-															</div>
-															<label class="col-sm-1 col-form-label text-right">총발행금액</label>
-															<div class="col-sm-2 input-group" style="text-align: right;">
-																<input type="text" class="form-control" id="" readonly> 
-															</div>
-														</div>
-													</div>
-													<!-- row3 -->
-													<div class="row form-group form-inline text-right mb-1">
-														<div class="col-sm-12 form-group">
-															<label class="col-sm-1 col-form-label text-right">발행일자</label>
-															<div class="col-sm-2 input-group date">
-																<input type="text" class="form-control" id="" value="" placeholder="yyyy-mm-dd" oninput="this.value = this.value.replace(/[^0-9-]/g, '')" onblur="this.value=formatDate(this.value.replaceAll('-',''));">
-																<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-															</div>
-															<label class="col-sm-1 col-form-label text-right">상장일자</label>
-															<div class="col-sm-2 input-group date">
-																<input type="text" class="form-control" id="" value="" placeholder="yyyy-mm-dd" oninput="this.value = this.value.replace(/[^0-9-]/g, '')" onblur="this.value=formatDate(this.value.replaceAll('-',''));">
-																<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-															</div>
-															<label class="col-sm-1 col-form-label text-right">만기일자</label>
-															<div class="col-sm-2 input-group date">
-																<input type="text" class="form-control" id="" value="" placeholder="yyyy-mm-dd" oninput="this.value = this.value.replace(/[^0-9-]/g, '')" onblur="this.value=formatDate(this.value.replaceAll('-',''));">
-																<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-															</div>
-															<label class="col-sm-1 col-form-label text-right">조기상환일자</label>
-															<div class="col-sm-2 input-group date">
-																<input type="text" class="form-control" id="" value="" placeholder="yyyy-mm-dd" oninput="this.value = this.value.replace(/[^0-9-]/g, '')" onblur="this.value=formatDate(this.value.replaceAll('-',''));">
-																<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-															</div>
-														</div>
-													</div>
-													<!-- row4 -->
-													<div class="row form-group form-inline text-right mb-1">
-														<div class="col-sm-12 form-group">
-															<label class="col-sm-1 col-form-label text-right">상장폐지일자</label>
-															<div class="col-sm-2 input-group date">
-																<input type="text" class="form-control" id="" value="" placeholder="yyyy-mm-dd" oninput="this.value = this.value.replace(/[^0-9-]/g, '')" onblur="this.value=formatDate(this.value.replaceAll('-',''));">
-																<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-															</div>
-															
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-lg-12">
-											<div class="ibox">
-												<div class="ibox-title">
-													<h5>▶ 상품분류</h5>
-													<div class="ibox-tools">
-														<button class="btn btn-default btn-xs" type="button" id=""><i class="fa fa-plus"></i>&nbsp;항목추가</button>
-																
-														<div th:fragment="file" id="file-upload" style="display: inline-block;">
-															<form id="upload-file-form">
-																<input type="hidden" id="fileKey1" name="fileKey1">
-																<input type="hidden" id="fileKey2" name="fileKey2" value="*">
-																<input type="hidden" class="form-control" id="key1">
-																<button class="btn btn-default btn-xs" type="button" id="UPLOAD_AddFile" ><i class="fa fa-download"></i>&nbsp;파일다운로드</button>
-																<button class="btn btn-default btn-xs" type="button" id="UPLOAD_DelFiles" ><i class="fa fa-eraser"></i>&nbsp;파일삭제</button>
-																<div style="display: none">
-																	<input type="file" class="custom-file-input" id="deal-upload-input" name="uploadfile" accept="*">
-																</div>
-															</form>
-														</div>
-													</div>
-												</div>
-												<div class="ibox-content">
-													<table class="table table-bordered">
-														<colgroup>
-															<col style="width: 5%;">
-															<col style="width: 70%;">
-															<col style="width: 15%;">
-															<col style="width: 10%;">
-														</colgroup>
-														<thead>
-															<tr>
-																<th>선택</th>
-																<th>파일명</th>
-																<th>파일구분</th>
-																<th>항목추가</th>
-															</tr>
-														</thead>
-														<tbody id="">
-															<tr class="text-center">
-																<td><input type="checkbox"></td>
-																<td class="text-left">기초자산설명서_하나갤러리_20240206.PDF</td>
-																<td><select class="form-control" id="" style="height: 24px">
-																	<option value="01"></option>
-																</select></td>
-																<td></td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-										</div>	
-									</div>
-								</div>
-							</div>
-
-							<!-- 평가기관 -->
-							<div role="tabpanel" class="tab-pane" id="tab-2-2">
-								<div class="panel-body" style="min-height: 500px;">
-									<div class="row">
-										<div class="col-lg-12">
-											<div class="ibox">
-												<div class="ibox-title">
-													<h5>▶ 토큰발행 소유자 등록</h5>
-												</div>
-												<div class="ibox-content">
-													<table class="table table-bordered">
-														<colgroup>
-															<col style="width: 10%;">
-															<col style="width: 15%;">
-															<col style="width: 10%;">
-															<col style="width: 65%;">
-	
-														</colgroup>
-														<tbody id="">
-															<tr class="text-right">
-																<th>소유자 구분</th>
-																<td class="input-group"><select class="form-control" id="">
-																	<option value="">선택</option>
-																</select></td>
-																<th>소유자 지갑</th>
-																<td><input type="text" class="form-control" id=""></td>
-															</tr>
-															
-														</tbody>
-													</table>
-												</div>
-											</div>
-										</div>	
-										<div class="col-lg-12">
-											<div class="ibox">
-												<div class="ibox-title">
-													<h5>▶ 평가기관 등록</h5>
-													<div class="ibox-tools">
-														<button class="btn btn-default btn-xs" type="button" onclick=""><i class="fa fa-plus"></i>&nbsp;행추가</button>
-														<button class="btn btn-default btn-xs" type="button" onclick=""><i class="fa fa-minus"></i>&nbsp;행삭제</button>
-													</div>
-												</div>
-												<div class="ibox-content">
-													<table class="table table-bordered">
-														<colgroup>
-															<col style="width: 2%;">
-															<col style="width: 8%;">
-															<col style="width: 30%;">
-															<col style="width: 10%;">
-															<col style="width: 8%;">
-															<col style="width: 8%;">
-															<col style="width: 8%;">
-														</colgroup>
-														<thead>
-															<tr>
-																<th></th>
-																<th>역할 구분</th>
-																<th>월렛 주소</th>
-																<th>업무분장코드</th>
-																<th>업무분장명</th>
-																<th>부서코드</th>
-																<th>업무 부서</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<td><input type="checkbox"></td>
-																<td>
-																	<select class="form-control" id="" style="height: 24px">
-																		<option value="01"></option>
-																	</select>
-																</td>
-																<td class="text-left">Ox9c34…d472</td>
-																<td class="text-left">토큰증권 등록</td>
-																<td>37862</td>
-																<td>
-																	<select class="form-control" id="" style="height: 24px">
-																		<option value="01">디지털자산실</option>
-																	</select>
-																</td>
-															</tr>
-
-														</tbody>		
-													</table>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
+					<!-- 기본 -->
+					<div class="ibox">
+						<div class="ibox-title">
+							<h5>▶&nbsp;청약 기본 정보</h5>
 						</div>
-					</div>		
+						<div class="ibox-content">
+							<!-- row1 -->
+							<div class="row form-group form-inline text-right mb-1">
+								<div class="col-sm-12 form-group">
+									<label class="col-sm-1 col-form-label text-right">종목코드</label>
+									<div class="col-sm-2 input-group">
+										<input type="text" class="form-control" readonly> 
+										<span class="input-group-append">
+											<button type="button" class="btn btn-default" onclick=""><i class="fa fa-search"></i></button>
+										</span>
+									</div>
+									<label class="col-sm-1 col-form-label text-right">종목명</label>
+									<div class="col-sm-2 input-group">
+										<input type="text" class="form-control" id="" readonly> 
+									</div>
+									<label class="col-sm-1 col-form-label text-right">발행가격</label>
+									<div class="col-sm-2 input-group ">
+										<input type="text" class="form-control" id="" readonly style="text-align: right;"> 
+									</div>
+									<label class="col-sm-1 col-form-label text-right">배정방식</label>
+									<div class="col-sm-2 input-group">
+										<select class="form-control" id="">
+											<option value="">선착순배정</option>
+											<option value="">비례배정</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<!-- row2 -->
+							<div class="row form-group form-inline text-right mb-1">
+								<div class="col-sm-12 form-group">
+									<label class="col-sm-1 col-form-label text-right">청약마감일자</label>
+									<div class="col-sm-2 input-group date">
+										<input type="text" class="form-control" id="" value="" placeholder="yyyy-mm-dd" oninput="this.value = this.value.replace(/[^0-9-]/g, '')" onblur="this.value=formatDate(this.value.replaceAll('-',''));">
+										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+									</div>
+									<label class="col-sm-1 col-form-label text-right">배정일자</label>
+									<div class="col-sm-2 input-group date">
+										<input type="text" class="form-control" id="" value="" placeholder="yyyy-mm-dd" oninput="this.value = this.value.replace(/[^0-9-]/g, '')" onblur="this.value=formatDate(this.value.replaceAll('-',''));">
+										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+									</div>
+									<label class="col-sm-1 col-form-label text-right">환불(공고)일자</label>
+									<div class="col-sm-2 input-group date">
+										<input type="text" class="form-control" id="" value="" placeholder="yyyy-mm-dd" oninput="this.value = this.value.replace(/[^0-9-]/g, '')" onblur="this.value=formatDate(this.value.replaceAll('-',''));">
+										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+									</div>
+									<label class="col-sm-1 col-form-label text-right">상장(입고)예정일자</label>
+									<div class="col-sm-2 input-group date">
+										<input type="text" class="form-control" id="" value="" placeholder="yyyy-mm-dd" oninput="this.value = this.value.replace(/[^0-9-]/g, '')" onblur="this.value=formatDate(this.value.replaceAll('-',''));">
+										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+									</div>
+								</div>
+							</div>
+							<!-- row3 -->
+							<div class="row form-group form-inline text-right mb-1">
+								<div class="col-sm-12 form-group">
+									<label class="col-sm-1 col-form-label text-right">청약시작시간</label>
+									<div class="col-sm-2 input-group">
+										<input type="text" class="form-control" id="" disabled> 
+									</div>
+									<label class="col-sm-1 col-form-label text-right">청약마감시간</label>
+									<div class="col-sm-2 input-group">
+										<input type="text" class="form-control" id="" disabled>
+									</div>
+									<label class="col-sm-1 col-form-label text-right">청약종목등록구분</label>
+									<div class="col-sm-2 input-group">
+										<select class="form-control" id="">
+											<option value="">선택</option>
+										</select>
+									</div>
+									<label class="col-sm-1 col-form-label text-right">청약가능 여부</label>
+									<div class="col-sm-2 input-group">
+										<select class="form-control" id="">
+											<option value="">선택</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="ibox">
+						<div class="ibox-title">
+							<h5>▶&nbsp;청약 수량 정보</h5>
+						</div>
+						<div class="ibox-content">
+							<!-- row1 -->
+							<div class="row form-group form-inline text-right mb-1">
+								<div class="col-sm-12 form-group">
+									<label class="col-sm-1 col-form-label text-right">총 모집수량</label>
+									<div class="col-sm-2 input-group">
+										<input type="number" class="form-control" id="">
+									</div>
+									<label class="col-sm-1 col-form-label text-right">총 모집금액</label>
+									<div class="col-sm-2 input-group">
+										<input type="text" class="form-control" id="" readonly style="text-align: left;">  
+									</div>
+								</div>
+							</div>
+							<!-- row2 -->
+							<div class="row form-group form-inline text-right mb-1">
+								<div class="col-sm-12 form-group">
+									<label class="col-sm-1 col-form-label text-right">최소청약수량</label>
+									<div class="col-sm-2 input-group">
+										<input type="number" class="form-control" id="">
+									</div>
+									<label class="col-sm-1 col-form-label text-right">최소청약금액</label>
+									<div class="col-sm-2 input-group">
+										<input type="text" class="form-control" id="" style="text-align: left;">  
+									</div>
+									<label class="col-sm-1 col-form-label text-right">최소모집금액</label>
+									<div class="col-sm-2 input-group">
+										<input type="number" class="form-control" readonly id="" style="text-align: left;">
+									</div>
+									<label class="col-sm-1 col-form-label text-right">최소모집수량</label>
+									<div class="col-sm-2 input-group">
+										<input type="text" class="form-control" id="" >  
+									</div>
+								</div>
+							</div>
+							<!-- row3 -->
+							<div class="row form-group form-inline text-right mb-1">
+								<div class="col-sm-12 form-group">
+									<label class="col-sm-1 col-form-label text-right">최대청약수량</label>
+									<div class="col-sm-2 input-group">
+										<input type="number" class="form-control" id="">
+									</div>
+									<label class="col-sm-1 col-form-label text-right">최대청약금액</label>
+									<div class="col-sm-2 input-group">
+										<input type="text" class="form-control" id="" style="text-align: left;">  
+									</div>
+									<label class="col-sm-1 col-form-label text-right">최소모집비율</label>
+									<div class="col-sm-2 input-group">
+										<input type="number" class="form-control" id="" style="text-align: left;">
+									</div>
+									<label class="col-sm-1 col-form-label text-right">청약증거금율</label>
+									<div class="col-sm-2 input-group">
+										<input type="text" class="form-control" id="" readonly>  
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					
+					
 					
 					<div class="ibox">
 						<div class="text-right">
-							<button class="btn btn-default" type="button" onclick=""><i class="fa fa-solid fa-arrow-left"></i>&nbsp;이전</button>
-							<button class="btn btn-default" type="button" onclick=""><i class="fa fa-solid fa-arrow-right"></i>&nbsp;다음</button>
+							<button class="btn btn-default" id="" onclick=""><i class="fa fa-undo"></i>&nbsp;초기화</button>
+							<button class="btn btn-success" id="" type="button" onclick=""><i class="fa fa-save"></i>&nbsp;등록</button>
+							
+							<button class="btn btn-default" type="button" onclick=""><i class="fa fa-pencil"></i>&nbsp;수정</button>
 						</div>
 					</div>
 				</div><!-- div row -->
 				
 			</div>
+
+			
 		</div>		
 	</div>
 </th:block>
