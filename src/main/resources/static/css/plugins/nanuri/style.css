@@ -10132,12 +10132,12 @@ div.pq-theme .pq-toolbar .btn{ font-size: 0.7rem; height: inherit; margin: 0 2px
 .chart_table .down.standard td{color: inherit;}
 
 /* 2025020203 */
-.profile-download > *{ padding: 50px 50px 50px 120px; }
+.profile-download > *{ padding: 40px 50px 40px 100px; }
 .profile-download .btn{margin-top: 170px;}
 
 .status-board { margin: 22px 52px; }
 .status-board .amount { font-size: 34px; font-weight: bold; margin: 0;}
-.status-board .rate{font-size: 16px; display: block; margin-top: 10px;}
+.status-board .rate{font-size: 16px; display: block; margin-top: 2px; border-top: 1px solid #f1f1f1; padding-top: 8px;}
 .status-board.up *{color: red;}
 .status-board.down *{color: #12689f;} 
 
