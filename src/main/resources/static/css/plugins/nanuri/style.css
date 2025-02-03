@@ -1001,7 +1001,7 @@ select:disabled, select[readonly]{cursor: text;}
   font-size: 12px;
 }
 .nav-header {
-  padding: 30px 25px;
+  padding: 38px 25px;
   background-color: #fff;
   /* background-image: url("patterns/header-profile.png"); */
 }
@@ -10115,3 +10115,22 @@ div.pq-theme .pq-toolbar .btn{ font-size: 0.7rem; height: inherit; margin: 0 2px
 
 
 .flow_wrap .flow_item_empty{display: flexbox; width: 24%; height:180px; padding: 12px 14px; position: relative; margin-left: 3%;}
+
+
+/* 2025020115 */
+
+.chart_table{ border: 1px solid #ddd;}
+.chart_table td{ padding: 6px !important; line-height: 1.54 !important;}
+.chart_table .up td{background: #e4f5ff; }
+.chart_table .up td:last-child{background: transparent;}
+.chart_table .up td:nth-child(2){ color: red; font-weight: bold;}
+.chart_table .up td:nth-child(3){ color: red;}
+.chart_table .down td{background: #ffdcd1;}
+.chart_table .down td:first-child{background: transparent;}
+.chart_table .down td:nth-child(2){ color: #12689f; font-weight: bold;}
+.chart_table .down td:nth-child(3){ color: #12689f;}
+.chart_table .down.standard td{color: inherit;}
+
+/* 2025020203 */
+.profile-download > *{ padding: 50px 50px 50px 120px; }
+.profile-download .btn{margin-top: 170px;}

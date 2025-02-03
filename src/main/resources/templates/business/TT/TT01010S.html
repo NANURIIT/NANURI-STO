@@ -11,60 +11,54 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="ibox ">
-					<!-- 조회조건영역 -->
-					<div class="ibox-content i-filter text-right">
-						<div class="form-group form-inline row">
-							
-							<!-- row2 -->
-							<div class="form-group col-sm-12 mb-1">
-								<label class="col-sm-1 col-form-label text-right">종목코드</label>
-								<div class="col-sm-3 input-group">
-									<input type="text" class="form-control" style="width: 5x;" id="TB04060S_prdtCd">
-									<span class="input-group-append">
-										<button type="button" class="btn btn-default" onclick="callTB06011P('TB04060S');"><i class="fa fa-search"></i></button>
-									</span>
-									<input type="text" class="form-control" id="TB04060S_prdtNm" style="width: 95px;" readonly>
-								</div>
-								<label class="col-sm-1 col-form-label text-right">거래상대방</label>
-								<div class="col-sm-3 input-group">
-									<input type="text" class="form-control" style="width: 30px;" id="TB04060S_bsnsRgstNo">
-									<span class="input-group-append">
-										<button type="button" class="btn btn-default" onclick="callTB03061P('TB04060S')"><i class="fa fa-search"></i></button>
-									</span>
-									<input type="text" class="form-control" style="width: 70px;" id="TB04060S_entpRnm" readonly>
-								</div>
-								<label class="col-sm-1 control-label">등록일자</label>
-								<div class="col-sm-3 input-group date">
-									<div class="col-sm-5 input-group date px-0">
-										<input type="text" class="form-control" id="TB04060S_rgstDt" name="FromDate" value="" placeholder="yyyy-mm-dd" oninput="this.value = this.value.replace(/[^0-9-]/g, '')">
-										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-									</div>
-									<span class="input-group-addon border-none"> ~ </span>
-									<div class="col-sm-5 input-group date px-0">
-										<input type="text" class="form-control" id="TB04060S_rgstEndDt" name="ToDate" value="" placeholder="yyyy-mm-dd" oninput="this.value = this.value.replace(/[^0-9-]/g, '')">
-										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+					<!-- 주문 기본 정보 -->
+					<div class="ibox-content mb-2">
+						<div class="row pr-1 pl-1">
+							<div class="ibox col-sm-7 pr-0">
+								<div class="ibox col-sm-12 pd0">
+									<div class="">
+										<p>812</p>
+										<span>+1.00%</span>
 									</div>
 								</div>
 							</div>
-							
-							<!-- row -->
-							<div class="form-group col-sm-12">
-								<label class="col-sm-1 col-form-label text-right">전결협의체</label>
-								<div class="col-sm-3 input-group">
-									<select class="form-control" name="account" id="TB04060S_I008">
-										<option value="">선택</option>
-									</select>
-								</div>
-								<label class="col-sm-1 col-form-label text-right">진행상태</label>
-								<div class="col-sm-3 input-group">
-									<select class="form-control" name="account" id="TB04060S_I011">
-										<option value="">선택</option>
-									</select>
-								</div>
-								<!-- 버튼영역 -->
-								<div class="col-sm-4 text-right">
-									<button class="btn btn-primary" onclick="TB04060Sjs.checkDealSearch();"><i class="fa fa-search"></i>&nbsp;조회</button>
-									<button class="btn btn-default" onclick="TB04060Sjs.resetSearchParam();" style="margin-right: 32px;"><i class="fa fa-undo"></i>&nbsp;초기화</button>
+							<div class="ibox col-sm-5 mb-0 pl-0">
+								<div class="ibox col-sm-12 mb-0 pl-0 pr-0">
+									<div class="ibox-content p-3" style="border: 0;">
+										<!-- row1 -->
+										<div class="row form-group form-inline text-right">
+											<div class="col-sm-12 form-group input-h">
+												<label class="col-sm-3">발행사</label>
+												<div class="col-sm-3 input-group">
+													<span>하나증권</span>
+												</div>
+											</div>
+										</div>
+										<!-- row2 -->
+										<div class="row form-group form-inline text-right">
+											<div class="col-sm-12 form-group input-h">
+												<label class="col-sm-3">유통사</label>
+												<div class="col-sm-3 input-group">
+													<span>미래에셋증권</span>
+												</div>
+											</div>
+										</div>
+										<!-- row3 -->
+										<div class="row form-group form-inline text-right">
+											<div class="col-sm-12 form-group input-h">
+												<label class="col-sm-3">주문유형</label>
+												<div class="col-sm-3 input-group">
+													부동산계약 1호
+												</div>
+												<!-- 버튼영역 -->
+												<div class="col-sm-6 text-right">
+													<button class="btn btn-default mg-l5" onclick="">&nbsp;<i class="fa fa-info"></i>&nbsp;&nbsp;정보</button>
+													<button class="btn btn-primary mg-l5" onclick=""><i class="fa fa-bell"></i>&nbsp;공시</button>
+												</div>
+											</div>
+										</div>
+										
+									</div>
 								</div>
 							</div>
 						</div>
@@ -72,7 +66,179 @@
 					<!-- 조회결과 -->
 					<div class="ibox-content" style="min-height: 680px">
 
-						<div id=""></div>
+						<div class="row pr-1 pl-1">
+							<div class="ibox col-sm-7 pr-0">
+								<div class="ibox col-sm-12 pd0">
+									<div class="ibox-content pd0" style="border: 0;">
+										<table class="table chart_table table-bordered">
+											<colgroup>
+												<col style="width: 30%;">
+												<col style="width: 20%;">
+												<col style="width: 20%;">
+												<col style="width: 30%;">
+											</colgroup>
+											<tbody id="">
+												<tr class="up">
+													<td class="text-right">3,800</td>
+													<td class="text-right">816</td>
+													<td>1.62%</td>
+													<td></td>
+												</tr>
+												<tr class="up">
+													<td class="text-right">3</td>
+													<td class="text-right">815</td>
+													<td>1.49%</td>
+													<td></td>
+												</tr>
+												<tr class="up">
+													<td class="text-right">2104</td>
+													<td class="text-right">814</td>
+													<td>1.37%</td>
+													<td></td>
+												</tr>
+												<tr class="up">
+													<td class="text-right">1780</td>
+													<td class="text-right">813</td>
+													<td>1.12%</td>
+													<td></td>
+												</tr>
+												<tr class="up">
+													<td class="text-right">2214</td>
+													<td class="text-right">812</td>
+													<td>1.00%</td>
+													<td></td>
+												</tr>
+
+												
+												<tr class="down standard">
+													<td class="text-right"></td>
+													<td class="text-right">811</td>
+													<td>0.00%</td>
+													<td></td>
+												</tr>
+												<tr class="down">
+													<td class="text-right"></td>
+													<td class="text-right">800</td>
+													<td>-0.25%</td>
+													<td>4,244</td>
+												</tr>
+												<tr class="down">
+													<td class="text-right"></td>
+													<td class="text-right">799</td>
+													<td>-0.37%</td>
+													<td></td>
+												</tr>
+												<tr class="down">
+													<td class="text-right"></td>
+													<td class="text-right">798</td>
+													<td>-0.50%</td>
+													<td>129</td>
+												</tr>
+												<tr class="down">
+													<td class="text-right"></td>
+													<td class="text-right">777</td>
+													<td>-0.62%</td>
+													<td>3,376</td>
+												</tr>
+												<tr class="down">
+													<td class="text-right"></td>
+													<td class="text-right">770</td>
+													<td>-2.05%</td>
+													<td>4,064</td>
+												</tr>
+												
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="ibox col-sm-5 pl-0 pr-0">
+								<div class="ibox col-sm-12">
+									<div class="ibox-content p-3">
+										<!-- row1 -->
+										<div class="row form-group form-inline text-right">
+											<div class="col-sm-12 form-group">
+												<label class="col-sm-3">계좌번호</label>
+												<div class="col-sm-9 input-group">
+													<select class="form-control" name="" id="">
+														<option value="1"></option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<!-- row2 -->
+										<div class="row form-group form-inline text-right">
+											<div class="col-sm-12 form-group">
+												<label class="col-sm-3">종목코드</label>
+												<div class="col-sm-9 input-group">
+													<input type="text" class="form-control" id="">
+													<input type="text" class="form-control" id="" style="width:180px;">
+												</div>
+											</div>
+										</div>
+										<!-- row3 -->
+										<div class="row form-group form-inline text-right">
+											<div class="col-sm-12 form-group">
+												<label class="col-sm-3">보유수량</label>
+												<div class="col-sm-9 input-group">
+													<input type="text" class="form-control text-right" id="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="ibox col-sm-12">
+									<div class="ibox-content p-3">
+										<!-- row1 -->
+										<div class="row form-group form-inline text-right">
+											<div class="col-sm-12 form-group">
+												<label class="col-sm-3">주문유형</label>
+												<div class="col-sm-9 input-group input-h">
+													<div class="col-sm-3 text-left input-group">
+														<input type="radio" value="지정가" name="">&nbsp;지정가
+													</div>
+													<div class="col-sm-3 text-left input-group">
+														<input type="radio" value="시장가" name="">&nbsp;시장가
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- row2 -->
+										<div class="row form-group form-inline text-right">
+											<div class="col-sm-12 form-group">
+												<label class="col-sm-3">매매가격</label>
+												<div class="col-sm-9 input-group">
+													<input type="text" class="form-control text-right" id="">
+												</div>
+											</div>
+										</div>
+										<!-- row3 -->
+										<div class="row form-group form-inline text-right">	
+											<div class="col-sm-12 form-group">	
+												<label class="col-sm-3">주문수량</label>
+												<div class="col-sm-9 input-group">
+													<input type="text" class="form-control text-right" id="">
+												</div>
+											</div>
+										</div>
+										<!-- row4 -->
+										<div class="row form-group form-inline text-right">		
+											<div class="col-sm-12 form-group">	
+												<label class="col-sm-3">주문총액</label>
+												<div class="col-sm-9 input-group">
+													<input type="text" class="form-control text-right" id="" readonly>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-sm-12 text-right mt-3">
+											<button class="btn btn-success mg-l5" type="button" onclick="" id=""><i class="fa fa-arrow-down"></i>&nbsp;매수</button>
+											<button class="btn btn-danger mg-l5" type="button" onclick="" id=""><i class="fa fa-arrow-up"></i>&nbsp;매도</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
