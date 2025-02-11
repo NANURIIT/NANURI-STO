@@ -10141,3 +10141,6 @@ div.pq-theme .pq-toolbar .btn{ font-size: 0.7rem; height: inherit; margin: 0 2px
 .status-board.up *{color: red;}
 .status-board.down *{color: #12689f;} 
 
+.pagination{ justify-content: center;}
+.select-xs{  font-size: 0.7rem;  padding: 0.2rem 0.4rem; border: 1px solid #ccc;}
+.underline{text-decoration: underline;}
